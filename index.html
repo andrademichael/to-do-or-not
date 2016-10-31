@@ -14,19 +14,37 @@
       </div>
       <div class="row">
         <div class="col-md-6">
-          <form id="">
-            <div class="form-group form-group-lg">
-              <label for=""><h4></h4></label><br>
-              <input id="" type="text">
+          <form id="toDos">
+            <div class="form-group form-group-md">
+              <label for="taskInput"><h4>What is your quest?</h4></label><br>
+              <input id="taskInput" type="text">
               <p class="warning alert-danger"></p>
             </div>
-            <button type="submit" class="btn btn-info"></button>
+            <div class="form-group form-group-md">
+              <label for="dueDateInput"><h4>When must you complete it?</h4></label><br>
+              <input id="dueDateInput" type="date">
+              <p class="warning alert-danger"></p>
+            </div>
+            <div class="form-group form-group-md">
+              <label for="locationInput"><h4>Where will it take you?</h4></label><br>
+              <input id="locationInput" type="text">
+              <p class="warning alert-danger"></p>
+            </div>
+            <div class="form-group form-group-md">
+              <label for="notesInput1"><h4>Notes?</h4></label><br>
+              <input id="notesInput1" class="notesInput" type="text">
+              <p class="warning alert-danger"></p>
+            </div>
+            <div id="extraNotes">
+            </div>
+            <button type="button" id="addButton"class="btn btn-primary">More Notes</button>
+            <button type="submit" class="btn btn-secondary">Add Task</button>
             <button type="reset" class="btn btn-primary">Clear Form</button>
           </form>
         </div>
 
         <div class="col-md-6">
-          <ul id="">
+          <ul id="output">
           </ul>
         </div>
       </div>
